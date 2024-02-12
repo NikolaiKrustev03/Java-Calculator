@@ -6,6 +6,7 @@ import java.awt.event.*;
 
 
 public class Calculator implements ActionListener{
+    
     JFrame frame;
     JTextField textField;
     JButton[] numberButtons = new JButton[10];
@@ -99,6 +100,7 @@ public class Calculator implements ActionListener{
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
     }
+    
     @Override
     public void actionPerformed(ActionEvent event) {
         try {
@@ -177,5 +179,4 @@ public class Calculator implements ActionListener{
             textField.setText("Error: " + e.getMessage());
         }
     }
-
 }
